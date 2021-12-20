@@ -93,9 +93,6 @@ Editor.builtinPlugins = [
 // Editor configuration.
 Editor.defaultConfig = {
 	toolbar: {
-		fontSize: {
-			options: [9, 11, 13, "default", 17, 19, 21],
-		},
 		items: [
 			"heading",
 			"|",
@@ -147,6 +144,9 @@ Editor.defaultConfig = {
 			"tableCellProperties",
 			"tableProperties",
 		],
+	},
+	fontSize: {
+		options: [9, 11, 13, "default", 17, 19, 21],
 	},
 };
 
