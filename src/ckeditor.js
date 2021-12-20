@@ -44,6 +44,8 @@ import TextTransformation from "@ckeditor/ckeditor5-typing/src/texttransformatio
 import Title from "@ckeditor/ckeditor5-heading/src/title.js";
 import Underline from "@ckeditor/ckeditor5-basic-styles/src/underline.js";
 
+import JSONplugin from "./JSONDataProcessor";
+
 class Editor extends ClassicEditor {}
 
 // Plugins to include in the build.
@@ -88,6 +90,7 @@ Editor.builtinPlugins = [
 	TextTransformation,
 	Title,
 	Underline,
+	JSONplugin,
 ];
 
 // Editor configuration.
@@ -125,6 +128,7 @@ Editor.defaultConfig = {
 			"superscript",
 			"redo",
 			"undo",
+			"Hello",
 		],
 	},
 	language: "en",
